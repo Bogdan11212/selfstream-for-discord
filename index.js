@@ -1,4 +1,4 @@
-const Discord = require('discord.js-selfbot-v13');
+ const Discord = require('discord.js-selfbot-v13');
 const client = new Discord.Client({
   readyStatus: false,
   checkUpdate: false
@@ -15,12 +15,12 @@ client.on('ready', async () => {
     console.log(`${client.user.tag} - rich presence started!`
                )
 const r = new Discord.RichPresence()
-    .setApplicationId('Your Client ID')
+    .setApplicationId('949383883990917222')
     .setType('STREAMING') //STREAMING, PLAYING, LISTENING.
-    .setURL('Your Twitch URL') // or your yt url
-    .setState('Your State')
-    .setName('mrnekrozyt')
-    .setDetails('Main Text')
+    .setURL('https://www.twitch.tv/islark_') // or your yt url
+    .setState('задоначено 0₽')
+    .setName('🫐')
+    .setDetails('@frostout🩸')
     .setStartTimestamp(Date.now()) // remove this if you dont want the timestamp (the time it started the rpc)
     /*.setParty({         
         max: 9999,
@@ -29,17 +29,17 @@ const r = new Discord.RichPresence()
     })*/
     
     //.setStartTimestamp(Date.now())
-    .setAssetsLargeImage('Static Image or Animated Image') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Your Large Text') //Text when you hover the Large image
-    .setAssetsSmallImage('Static Image or Animated Image') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Your Small Text') //Text when you hover the Small image
-    .addButton('Button Name', 'Your Button URL')
-    .addButton('Button Name', 'Your Button URL')
+    .setAssetsLargeImage('https://media.discordapp.net/attachments/859639720803958793/1113123725865386034/a6fbadb27cfa7acd19bebb6bb20612a4.gif') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('🕷') //Text when you hover the Large image
+    .setAssetsSmallImage('https://media.discordapp.net/attachments/1059613667202707466/1094672637340426310/ezgif.com-video-to-gif1.gif') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('💀') //Text when you hover the Small image
+    .addButton('links', 'https://frostout.taplink.ws')
+    .addButton('discord guild', 'https://discord.gg/AWJqRcnaaZ')
      client.user.setActivity(r);
-     client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
+     client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 })
 
-client.login(process.env.TOKEN)
+client.login(process.env.token)
 
 
 
